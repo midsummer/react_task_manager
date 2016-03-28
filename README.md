@@ -12,7 +12,7 @@ First of all, download project from remote repository
 Download packages
 
     $ npm install react --save
-    & npm install react-dom --save
+    $ npm install react-dom --save
     $ npm install file-loader --save-dev
     $ npm install babel-loader --save-dev
     $ npm install babel-preset-react
