@@ -19,7 +19,7 @@ var TaskList = React.createClass({
     }
 
     return (
-      <table>
+      <table className="tasks-table">
 	<tbody>
           { tasks }
         </tbody>

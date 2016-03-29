@@ -36,6 +36,8 @@ var TaskInput = React.createClass({
   _onKeyDown: function(event) {
     if (event.keyCode === 13) {
       this._save();
+    } else if (event.keyCode == 27 && this.props.mode === TasksConstants.EDIT_MODE) {
+      this.props.updateHandler();
     }
   },
 
@@ -46,9 +48,18 @@ var TaskInput = React.createClass({
   },
 
   render: function() {
+    var placeholder = this.props.mode === TasksConstants.EDIT_MODE ? 'Edit your task...' : 'New task'
     return (
       <div>
-        <input type="text" onChange={this._onChange} onKeyDown={this._onKeyDown} value={this.state.text} />
+        <input 
+          autoFocus 
+          type="text" 
+          placeholder={placeholder}
+          className="task-input" 
+          onChange={this._onChange} 
+          onKeyDown={this._onKeyDown} 
+          value={this.state.text} 
+        />
       </div>
     );
   }

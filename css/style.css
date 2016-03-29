@@ -1,0 +1,37 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.center {
+  width: 500px;
+  margin: 10px auto;
+}
+
+.task-input {
+  width: 100%;
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.tasks-table {
+  width: 100%;
+}
+
+.tasks-table .task-row {
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.tasks-table .task-row .action-col {
+  width: 30px;
+}
+
+.tasks-table .task-row .action-col button {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  font-size: 20px;
+}

@@ -35,16 +35,16 @@ var Task = React.createClass({
     var rowValue;
     if (this.state.mode === TasksConstants.SHOW_MODE) {
       rowValue = (
-        <tr>
+        <tr className="task-row">
           <td>{task.text}</td>
-          <td><button className="edit" onClick={this._onEditClick} /></td>
-          <td><button className="destroy" onClick={this._onDestroyClick} /></td>
+          <td className="action-col"><button onClick={this._onEditClick}><i className="fa fa-edit"/></button></td>
+          <td className="action-col"><button onClick={this._onDestroyClick}><i className="fa fa-times"/></button></td>
         </tr>
       );
     } else {
       rowValue = (
         <tr>
-          <td><TaskInput mode={TasksConstants.EDIT_MODE} text={task.text} id={task.id} updateHandler={this._updateHandler} /></td>
+          <td colSpan="3"><TaskInput mode={TasksConstants.EDIT_MODE} text={task.text} id={task.id} updateHandler={this._updateHandler} /></td>
         </tr>
       );
     }
