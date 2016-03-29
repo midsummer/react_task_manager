@@ -22,12 +22,6 @@ var TasksActions = {
       id: id,
       text: text
     });
-  },
-
-  loadTasks: function() {
-    AppDispatcher.handleAction({
-      actionType: TasksConstants.LOAD_TASKS
-    })
   }
 };
 

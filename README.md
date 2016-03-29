@@ -9,18 +9,9 @@ First of all, download project from remote repository
  
     $ git clone https://github.com/midsummer/react_task_manager.git
 
-Download packages
+Install necessary packages with `npm`
 
-    $ npm install react --save
-    $ npm install react-dom --save
-    $ npm install file-loader --save-dev
-    $ npm install babel-loader --save-dev
-    $ npm install babel-preset-react
-    $ npm install babel-preset-es2015
-    $ npm install react-hot-loader --save-dev
-
-    $ npm install webpack-dev-server --global
-    $ npm install webpack-dev-server --save-dev
+    webpack react react-dom flux events keymirror object-assign file-loader babel-loader babel-preset-react babel-preset-es2015 react-hot-loader webpack-dev-server webpack-dev-server
 
 Well done! Now you're ready to run the application:
 
