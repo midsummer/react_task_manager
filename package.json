@@ -2,7 +2,7 @@
   "name": "task_manager",
   "version": "1.0.0",
   "description": "Simple task manager",
-  "main": "main.js",
+  "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server"

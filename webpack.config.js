@@ -4,11 +4,11 @@ var path = require('path');
 var config = {
     context: __dirname,
     entry: {
-      javascript: "./app/main.js",
+      javascript: "./js/app.js",
       html: "./index.html",
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'js'),
         filename: 'bundle.js'
     },
     module: {
